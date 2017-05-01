@@ -1,0 +1,51 @@
+.wrapper {
+	background-image: url("http://wallpapercave.com/wp/JzfvVHJ.jpg");
+}
+
+header {
+	line-height: 55px;
+	text-align: center;
+	font-size: 50px;
+	max-width: 500px;
+	background-color: #aaeedd;
+	font-family: Georgia, Times, Times, serif;
+	margin: none;
+	}
+
+.directions {
+	height: 300px;
+	width: 300px;
+	background-color: #D2B48C;
+	padding: 15px;
+	line-height: 15px;
+	margin-left: 30px;
+	}
+#random-number {
+	border: 2px;
+	border-style: solid;
+	height: 50px;
+	width: 150px;
+	background-color: #aaeedd;
+	padding: 15px;
+	margin-left: 30px;
+
+}
+
+#wins-losses {
+	border: 2px;
+	border-style: solid;
+	height: 50px;
+	width: 150px;
+	background-color: #aaeedd;
+	padding: 15px;
+	margin-left: 30px;
+}
+
+#your-score {
+	border: 2px;
+	border-style: solid;
+	height: 50px
+	max-width: 150px;
+	background-color: #aaeedd;
+}	
+
