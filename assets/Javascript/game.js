@@ -4,8 +4,8 @@
 //link pictures to random values from 1-12, have numbers change every game
 //create a scoring system for points accumulated from crystal clicks
 //display accumulated points from crystal clicks
-//if user goes over compter generated number = loss
-//if user score = random computer number = win
+//if user score does not equal compter generated number = loss
+//if user score = computer number = win
 //create a wins/loss functional display to keep score after game has been reset
 
 //variables for game
@@ -59,20 +59,20 @@ function setCrystalValue() {
 
 // Add On-click event listener and add crystal scores together
 $( "#crystal-1" ).onclick(function() {
-	crystalOne = crstalOne.value
-	display.html("#yourscore" + crystalOne);
+	crystalOne = (crystalOne.value);
+	display.html("#score" + crystalOne);
 
 $( "#crystal-1" ).onclick(function() {
-	crystalOne = crstalOne.value
-	display.html("#yourscore" + crystalOne);
+	crystalOne = (crystalOne.value);
+	display.html("#score" + crystalOne);
 
 $( "#crystal-1" ).onclick(function() {
-	crystalOne = crstalOne.value
-	display.html("#yourscore" + crystalOne);
+	crystalOne = (crystalOne.value);
+	display.html("#score" + crystalOne);
 
 $( "#crystal-1" ).onclick(function() {
-	crystalOne = crstalOne.value
-	display.html("#yourscore" + crystalOne);
+	crystalOne = (crystalOne.value);
+	display.html("#score" + crystalOne);
 
 });
 
@@ -80,9 +80,34 @@ setCrystalValue();
 
 crystalScore("#crystal-1", crystalOne);
 crystalScore("#crystal-2", crystalTwo);
-crystalScore("#rystal-3", crystalThree);
+crystalScore("#crystal-3", crystalThree);
 crystalScore("#crystal-4", crystalFour);
 
+
+//Function to reset game after win/loss
+var reset = function(){
+	crystalOne = "";
+	crystalTwo ="";
+	crystalThree ="";
+	crystalFour = "";
+	crystalScore();
+	Score();
+}
+
+	crystalScore();
+	Score();
+
+//Logic to determine win or loss
+	if(computerNumber === Score){
+		wins++;
+		document.getElementById("wins").innerHTML = "Wins: " + wins;
+		reset();
+	};
+	if(computerNumber != Score){
+		losses++;
+		document.getElementById("losses").innerHTML = "Losses: " + losses;
+		reset();
+	};
 
 
 

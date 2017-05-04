@@ -31,7 +31,15 @@ header {
 	background-color: #aaeedd;
 }
 
-#wins-losses {
+#wins {
+	
+	margin-left: 30px;
+	height: 50px;
+	width: 150px;
+	background-color: #aaeedd;
+}
+
+#losses {
 	
 	margin-left: 30px;
 	height: 50px;
@@ -40,6 +48,16 @@ header {
 }
 
 #your-score {
+	margin-left: 30px;
+	border: 2px;
+	border-style: solid;
+	height: 50px
+	width: 150px;
+	background-color: #aaeedd;
+}	
+
+#score {
+	margin-left:20px;
 	border: 2px;
 	border-style: solid;
 	height: 50px
