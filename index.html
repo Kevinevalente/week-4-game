@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <title>The Crystal Collector</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -41,43 +43,42 @@
     <div class ="row">
       <div class="col-md-6">
         <div id="random-number">
-          <p>0</p>
+        
         </div>
         <div class="col-md-6">
           <div id="wins-losses">
             <p>wins:
+              <br>
                Losses:
                </p>
           </div> 
         </div>
       </div>
     </div>
+
 <!-- Crystal buttons -->
   <div class="row">
-    <div class="col-xs-6 col-md-3">
-        <a href="#" class="thumbnail-1">
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/69/75/69/6975690800c571c908eef42d0189c961.gif" alt="Crystal 1" style="width:100px;height:100px; margin:5px;">
-        </a>
-        <a href="#" class="thumbnail-2">
-          <img src="https://media.giphy.com/media/26uf1178K8XXxuRvG/giphy.gif" alt="Crystal 2" style="width:100px;height:100px; margin:5px;">
-        </a>
-        <a href="#" class="thumbnail-3">
-          <img src=https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr9vD4r_bNB1oH8sOvXKiSQ6kfxVEUpXlo62HGLMjxydcY-A4Y alt="Crystal 3" style="width:100px;height:100px; margin:5px;">
-        </a>
-        <a href="#" class="thumbnail-4">
-          <img src="https://68.media.tumblr.com/c24d7faf8611f86b38c2fe35e5ef5c7d/tumblr_oktm832xWw1vsjcxvo1_500.gif" alt="Crystal 4" style="width:100px;height:100px; margin:5px;">
-        </a>
+    <div class="col-md-6">
+          
+          <img id="crystal-1" value="crystalOne" src="https://s-media-cache-ak0.pinimg.com/originals/69/75/69/6975690800c571c908eef42d0189c961.gif" 1" style="width:100px;height:100px; margin:5px;"></img>
+
+            <img id="crystal-2" value="crystalTwo" src="https://media.giphy.com/media/26uf1178K8XXxuRvG/giphy.gif" 1" style="width:100px;height:100px; margin:5px;"></img>
+            
+           <img id="crystal-3" value="crystalThree" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr9vD4r_bNB1oH8sOvXKiSQ6kfxVEUpXlo62HGLMjxydcY-A4Y" 1" style="width:100px;height:100px; margin:5px;"></img>
+
+          <img id="crystal-4" value="crystalFour" src="https://68.media.tumblr.com/c24d7faf8611f86b38c2fe35e5ef5c7d/tumblr_oktm832xWw1vsjcxvo1_500.gif" 1" style="width:100px;height:100px; margin:5px;"></img>
+        
     </div>
   </div>
 <!--Div for Current Score-->
 <div class ="row">
-      <div class="col-md-6">
+      <div class="col-md-2">
         <div id="your-score">
           <p>
           Your Score is:
           </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-2">
           <div id="score">
             <p>
             0
@@ -88,7 +89,7 @@
     </div>
 
 </div> 
-    <script type="text/javascript" src="game.js"></script>
+    <script type="text/javascript" src="assets/Javascript/game.js"></script>
 </body>
 
 </html>
